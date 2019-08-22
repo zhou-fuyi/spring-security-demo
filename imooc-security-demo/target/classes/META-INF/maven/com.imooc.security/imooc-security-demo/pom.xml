@@ -44,10 +44,18 @@
 	    <version>2.7.0</version>
 	</dependency>
 	
+	<!-- wiremock start -->
 	<dependency>
 		<groupId>com.github.tomakehurst</groupId>
         <artifactId>wiremock</artifactId>
 	</dependency>
+	
+	<!-- wiremock 当前测试中需要httpclient的支持才能运行 -->
+	<dependency>
+		<groupId>org.apache.httpcomponents</groupId>
+		<artifactId>httpclient</artifactId>
+	</dependency>
+	<!-- wiremock end -->
   </dependencies>
   
    <!-- 生成一个可执行的jar -->
